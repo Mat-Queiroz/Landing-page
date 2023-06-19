@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+   
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').cheked = false;" >
+             <a href="#">LOGO</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').cheked = false;">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#sobre">About</a></li>
+                    <li><a href="#top3">Work</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 </ul>
+            </nav>
+        </div>    
+    </aside>
+    
+    <div class="menu-spacing"></div>
+       
+    <section id="intro" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Intro</h2>
+                <p>
+                    Site made only with the intention of putting into practice my learning of html, css and js.
+                </p>
+
+                <P>
+                    Thanks for the visit!
+                </P>
+            </div>
+          
+            <div class="intro-img">
+                <img src="assets/img/javascript_foto.svg" alt="Desenho de um homem segurando a logo do css, desenho de uma mulher empurrando a logo do javascript, desenho de um hovem segurando a logo do html">
+            </div>   
+        </div>  
+    </section>
+
+    <section id="sobre" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>About</h2>
+            <p>
+                My name is matheus queiroz, and this is just a landing page i made with the intention of practicing what I learned in css and html.
+            </p>
+            <p> 
+                I'm currently in the second period of the systems analysis and development college, you can see some of the projects I've done here on this site or on my github!
+            </p>
+            <p class="p-descricao"><b>
+                This site is not ready and as I do more projects I will update it, I hope you like it!
+            </b></p>
+        </div>
+    </section>
+
+    <section id="top3" class="top3 intro main-bg section">
+        <div class="top3-content">
+            <h2 class="grid-main-heading">3 works</h2>
+                <div class="grid">
+                    <article>
+                        <h3>Rescue Soldier</h3>
+                        <p>Rescue soldier is a game made in the Python language for a college project</p>                    </article>
+                    <article>
+                        <h3>Calculator</h3>
+                        <p>College project to make a calculator in the C language</article>
+                    <article>
+                        <h3>Coming soon!</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque commodi nulla sed dicta tempora? Velit et dolore magni illo.</p>
+                    </article>
+                </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="top3 intro white-bg section">
+        <div class="top3-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Photos of completed projects</p>
+                <div class="grid">
+                    <div class="gallery-img">
+                        <img src="./assets/img/RS.png" alt="print de jogo Rescue Soldier, na print mostra 1 soldado e 3 zumbis, estilo de arte pixealizado">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="./assets/img/scsconsolecalculadora1.png" alt="print do console no menu de uma calculadora ">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="./assets/img/ComingSoon.png" alt="print de quadrado cinza com texto escrito Coming Soon">
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class=" main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Contact - me</h2>
+                <p>
+                    Send me an email or complete the form below!             
+                </p>
+            </div>
+          
+            <div class="intro-img">
+                <img src="assets/img/undraw_contact_us_re_4qqt.svg" alt="Desenho de um homem segurando a logo do css, desenho de uma mulher empurrando a logo do javascript, desenho de um hovem segurando a logo do html">
+            </div>   
+        </div>  
+
+        <div class="contact-form">
+            <fieldset class="form-grid">
+
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Your Last name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="first-name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your e-mail" >
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea type="message" name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit"> Send message</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p><a rel="nofllow" target="_blank" href="https://github.com/Mat-Queiroz"> Feito para aprendizado por Matheus Queiroz</p>
+    </footer>
+    
+    <a class="back-to-top" href="#">TOP</a>
+
+</body>
+</html>
